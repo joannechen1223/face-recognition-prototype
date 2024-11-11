@@ -21,7 +21,7 @@ def get_embedding(model, face_pixels):
 
 
 # load the face dataset
-data = load('14-celebrity-faces-dataset.npz')
+data = load('data/14-celebrity-faces-dataset.npz')
 trainX, trainy, testX, testy = data['arr_0'], data['arr_1'], data['arr_2'], data['arr_3']
 print('Loaded: ', trainX.shape, trainy.shape, testX.shape, testy.shape)
 # load the facenet model
